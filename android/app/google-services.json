@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "881484145481",
+    "firebase_url": "https://car-service-management-42054-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "car-service-management-42054",
+    "storage_bucket": "car-service-management-42054.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881484145481:android:dc82eef9553854d3b93098",
+        "android_client_info": {
+          "package_name": "com.carservicemanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881484145481-26mqeldnr1k1v8d8iuidgihv0pshr0js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCURxAXF9Xg4LT5CKEkM231oPZoMFWHmkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881484145481-26mqeldnr1k1v8d8iuidgihv0pshr0js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

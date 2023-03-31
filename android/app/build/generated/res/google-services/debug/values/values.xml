@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">881484145481-26mqeldnr1k1v8d8iuidgihv0pshr0js.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://car-service-management-42054-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">881484145481</string>
+    <string name="google_api_key" translatable="false">AIzaSyCURxAXF9Xg4LT5CKEkM231oPZoMFWHmkY</string>
+    <string name="google_app_id" translatable="false">1:881484145481:android:dc82eef9553854d3b93098</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCURxAXF9Xg4LT5CKEkM231oPZoMFWHmkY</string>
+    <string name="google_storage_bucket" translatable="false">car-service-management-42054.appspot.com</string>
+    <string name="project_id" translatable="false">car-service-management-42054</string>
+</resources>
