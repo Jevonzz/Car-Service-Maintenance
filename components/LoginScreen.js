@@ -21,7 +21,10 @@ import BlankSpacer from 'react-native-blank-spacer';
 import FormSuccess from './shared/formSuccess';
 import Loader from './shared/loader';
 import Colors from './const/color';
-import {authentication} from '../firebase/firebase-config';
+import {authentication, firebaseDB} from '../firebase/firebase-config';
+import {collection, doc, where, getDoc, query} from 'firebase/firestore/lite';
+import {firebase} from '@react-native-firebase/auth';
+import {async} from '@firebase/util';
 
 // TextField not empty validation function
 const isValidObjField = obj => {
@@ -34,16 +37,47 @@ const LoginScreen = ({navigation, onPress}) => {
   const [loader, setLoader] = useState(false);
   const [OverlayText, setOverlayText] = useState('');
   const [popUpErr, setpopUpErr] = useState(false);
+  const [uid, setUid] = useState('');
+  const [role, setRole] = useState('');
 
   // Listens to auth changes
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(authentication, user => {
+    const unsubscribe = onAuthStateChanged(authentication, async user => {
       if (user) {
-        navigation.replace('UserHome');
+        setUid(user.uid);
+      } else {
+        setUid('');
+        setRole({role: ''});
       }
     });
-    return unsubscribe;
+    return () => unsubscribe();
   }, []);
+
+  //getRole from DB
+  useEffect(() => {
+    const getRole = async () => {
+      const userQuery = query(doc(firebaseDB, 'users', uid));
+      const querySnapshot = await getDoc(userQuery);
+      const userRole = querySnapshot.data().role;
+      setRole({role: userRole});
+    };
+    if (uid) {
+      getRole();
+    }
+  }, [uid]);
+
+  useEffect(() => {
+    console.log(role.role);
+    if (role.role === 'admin') {
+      navigation.navigate('AdminScreen');
+    }
+    if (role.role === 'crew') {
+      navigation.navigate('CrewScreen');
+    }
+    if (role.role === 'user') {
+      navigation.navigate('UserScreen');
+    }
+  }, [role]);
 
   // OnChangeText function for textfields
   const handleOnChangeText = (value, fieldName) => {

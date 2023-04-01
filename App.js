@@ -61,10 +61,8 @@ const User = () => {
   return (
     <StackNav.Navigator
       screenOptions={{headerShown: false}}
-      initialRouteName="UserScreen">
-      <StackNav.Screen
-        name="UserScreen"
-        component={UserScreen}></StackNav.Screen>
+      initialRouteName="User">
+      <StackNav.Screen name="User" component={UserScreen}></StackNav.Screen>
     </StackNav.Navigator>
   );
 };
@@ -73,10 +71,8 @@ const Crew = () => {
   return (
     <StackNav.Navigator
       screenOptions={{headerShown: false}}
-      initialRouteName="CrewScreen">
-      <StackNav.Screen
-        name="CrewScreen"
-        component={CrewScreen}></StackNav.Screen>
+      initialRouteName="Crew">
+      <StackNav.Screen name="Crew" component={CrewScreen}></StackNav.Screen>
       <StackNav.Screen
         name="ManageAppointment"
         component={ManageAppointment}></StackNav.Screen>
@@ -93,10 +89,8 @@ const Admin = () => {
   return (
     <StackNav.Navigator
       screenOptions={{headerShown: false}}
-      initialRouteName="AdminScreen">
-      <StackNav.Screen
-        name="AdminScreen"
-        component={AdminScreen}></StackNav.Screen>
+      initialRouteName="Admin">
+      <StackNav.Screen name="Admin" component={AdminScreen}></StackNav.Screen>
       <StackNav.Screen
         name="ManageStock"
         component={ManageStock}></StackNav.Screen>
@@ -118,7 +112,9 @@ const App = () => {
       <StackNav.Navigator screenOptions={{headerShown: false}}>
         <StackNav.Screen name="Splash" component={SplashScreen} />
         <StackNav.Screen name="Auth" component={Auth} />
-        <StackNav.Screen name="UserScreen" component={UserScreen} />
+        <StackNav.Screen name="UserScreen" component={User} />
+        <StackNav.Screen name="CrewScreen" component={Crew} />
+        <StackNav.Screen name="AdminScreen" component={Admin} />
       </StackNav.Navigator>
     </NavigationContainer>
   );
