@@ -39,7 +39,6 @@ const RegisterScreen = ({navigation, onPress}) => {
     email: '',
     password: '',
     confirm_password: '',
-    
   });
   const {fullname, phone_num, email, password, confirm_password} = userInfo;
   const [loader, setLoader] = useState(false);
@@ -49,7 +48,7 @@ const RegisterScreen = ({navigation, onPress}) => {
   // Function to store user data from Firestore
   const query = async uid => {
     await setDoc(doc(firebaseDB, 'users', uid), {
-      name: fullname,   
+      name: fullname,
       phoneNo: phone_num,
       email: email,
       uid: uid,
@@ -101,6 +100,9 @@ const RegisterScreen = ({navigation, onPress}) => {
           const user = userCredentials.user;
           query(user.uid);
           setLoader(false);
+          setOverlayText('Sign up successfully');
+          navigation.navigate('Login');
+          setpopUpErr(true);
         })
         .catch(e => {
           setLoader(false);

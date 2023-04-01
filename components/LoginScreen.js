@@ -47,7 +47,7 @@ const LoginScreen = ({navigation, onPress}) => {
         setUid(user.uid);
       } else {
         setUid('');
-        setRole({role: ''});
+        setRole('');
       }
     });
     return () => unsubscribe();
@@ -59,7 +59,7 @@ const LoginScreen = ({navigation, onPress}) => {
       const userQuery = query(doc(firebaseDB, 'users', uid));
       const querySnapshot = await getDoc(userQuery);
       const userRole = querySnapshot.data().role;
-      setRole({role: userRole});
+      setRole(userRole);
     };
     if (uid) {
       getRole();
@@ -67,14 +67,14 @@ const LoginScreen = ({navigation, onPress}) => {
   }, [uid]);
 
   useEffect(() => {
-    console.log(role.role);
-    if (role.role === 'admin') {
+    console.log(role);
+    if (role === 'admin') {
       navigation.navigate('AdminScreen');
     }
-    if (role.role === 'crew') {
+    if (role === 'crew') {
       navigation.navigate('CrewScreen');
     }
-    if (role.role === 'user') {
+    if (role === 'user') {
       navigation.navigate('UserScreen');
     }
   }, [role]);
