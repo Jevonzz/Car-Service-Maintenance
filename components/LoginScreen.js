@@ -23,7 +23,6 @@ import Loader from './shared/loader';
 import Colors from './const/color';
 import {authentication, firebaseDB} from '../firebase/firebase-config';
 import {collection, doc, where, getDoc, query} from 'firebase/firestore/lite';
-import {firebase} from '@react-native-firebase/auth';
 import {async} from '@firebase/util';
 
 // TextField not empty validation function
@@ -37,6 +36,7 @@ const LoginScreen = ({navigation, onPress}) => {
   const [loader, setLoader] = useState(false);
   const [OverlayText, setOverlayText] = useState('');
   const [popUpErr, setpopUpErr] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const [uid, setUid] = useState('');
   const [role, setRole] = useState('');
 

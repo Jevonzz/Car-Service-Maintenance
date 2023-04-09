@@ -14,6 +14,8 @@ import AdminScreen from './components/admin/AdminScreen';
 import ManageCrew from './components/admin/ManageCrew';
 import ManageStock from './components/admin/ManageStock';
 import UpdateCC from './components/admin/UpdateCC';
+import AddStock from './components/admin/AddStock';
+import UpdateStock from './components/admin/UpdateStock';
 
 //Crew
 import CrewScreen from './components/crew/CrewScreen';
@@ -40,6 +42,8 @@ import {onAuthStateChanged} from 'firebase/auth';
 import {LogBox} from 'react-native';
 import {and} from 'react-native-reanimated';
 import {Provider} from 'react-redux';
+import UpdateCrew from './components/admin/UpdateCrew';
+import AddCrew from './components/admin/AddCrew';
 
 const StackNav = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -94,10 +98,19 @@ const Admin = () => {
       <StackNav.Screen
         name="ManageStock"
         component={ManageStock}></StackNav.Screen>
+      <StackNav.Screen name="AddStock" component={AddStock}></StackNav.Screen>
+      <StackNav.Screen
+        name="UpdateStock"
+        component={UpdateStock}></StackNav.Screen>
+
       <StackNav.Screen name="UpdateCC" component={UpdateCC}></StackNav.Screen>
       <StackNav.Screen
         name="ManageCrew"
         component={ManageCrew}></StackNav.Screen>
+      <StackNav.Screen
+        name="UpdateCrew"
+        component={UpdateCrew}></StackNav.Screen>
+      <StackNav.Screen name="AddCrew" component={AddCrew}></StackNav.Screen>
     </StackNav.Navigator>
   );
 };

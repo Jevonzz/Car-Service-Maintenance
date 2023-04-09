@@ -28,30 +28,30 @@ const AdminScreen = ({navigation, onPress}) => {
         source={require('../../assets/img/Logo.png')}
       />
       <Text style={styles.word}>Administrator</Text>
-      <View style={{marginTop: 150}}>
+      <View style={{marginTop: 200}}>
         <TouchableOpacity
           style={styles.background}
           onPress={() => navigation.navigate('UpdateCC')}>
-          <Ionicons name="car-sharp" size={55} style={styles.icon} />
+          <Ionicons name="car-sharp" size={40} style={styles.icon} />
         </TouchableOpacity>
-        <Text style={styles.word}>Update Company Contact</Text>
+        <Text style={styles.label}>Update Company Contact</Text>
       </View>
       <View style={{marginTop: 50}}>
         <TouchableOpacity
           style={styles.background}
           onPress={() => navigation.navigate('ManageStock')}>
-          <MaterialCommunityIcons name="tools" size={55} style={styles.icon} />
+          <MaterialCommunityIcons name="tools" size={40} style={styles.icon} />
         </TouchableOpacity>
-        <Text style={styles.word}>Manage Stocks</Text>
+        <Text style={styles.label}>Manage Stocks</Text>
       </View>
 
       <View style={{marginTop: 50}}>
         <TouchableOpacity
           style={styles.background}
           onPress={() => navigation.navigate('ManageCrew')}>
-          <Octicons name="organization" size={55} style={styles.icon} />
+          <Octicons name="organization" size={40} style={styles.icon} />
         </TouchableOpacity>
-        <Text style={styles.word}>Manage Service Crew List</Text>
+        <Text style={styles.label}>Manage Service Crew List</Text>
       </View>
     </View>
   );
@@ -93,6 +93,12 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     top: '20%',
     fontSize: 20,
+  },
+  label: {
+    position: 'relative',
+    alignSelf: 'center',
+    top: '20%',
+    fontSize: 17,
   },
   background: {
     backgroundColor: '#D3D3D3',

@@ -10,6 +10,7 @@ import {
   Image,
   useWindowDimensions,
   TextBase,
+  SafeAreaView,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -44,6 +45,7 @@ const RegisterScreen = ({navigation, onPress}) => {
   const [loader, setLoader] = useState(false);
   const [OverlayText, setOverlayText] = useState('');
   const [popUpErr, setpopUpErr] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   // Function to store user data from Firestore
   const query = async uid => {
@@ -67,27 +69,39 @@ const RegisterScreen = ({navigation, onPress}) => {
     var regName = /^[a-zA-Z]+$/;
     if (!isValidObjField(userInfo)) {
       setOverlayText('Please fill all fields');
-      return setpopUpErr(true);
+      setIsVisible(true);
+      setpopUpErr(true);
+      return;
     }
     if (!regName.test(fullname)) {
       setOverlayText('Invalid name');
-      return setpopUpErr(true);
+      setIsVisible(true);
+      setpopUpErr(true);
+      return;
     }
     if (phone_num.length < 10 || phone_num.length > 12) {
       setOverlayText('Invalid phone number');
-      return setpopUpErr(true);
+      setIsVisible(true);
+      setpopUpErr(true);
+      return;
     }
     if (!email.includes('@')) {
       setOverlayText('Invalid email');
-      return setpopUpErr(true);
+      setIsVisible(true);
+      setpopUpErr(true);
+      return;
     }
     if (password.length < 7) {
       setOverlayText('Minimum 8 characters required for password');
-      return setpopUpErr(true);
+      setIsVisible(true);
+      setpopUpErr(true);
+      return;
     }
     if (password !== confirm_password) {
       setOverlayText('Passwords do not match');
-      return setpopUpErr(true);
+      setIsVisible(true);
+      setpopUpErr(true);
+      return;
     }
     return true;
   };
@@ -101,20 +115,22 @@ const RegisterScreen = ({navigation, onPress}) => {
           query(user.uid);
           setLoader(false);
           setOverlayText('Sign up successfully');
+          setIsVisible(true);
+          setpopUpErr(false);
           navigation.navigate('Login');
-          setpopUpErr(true);
         })
         .catch(e => {
           setLoader(false);
           setOverlayText(e.message);
           setpopUpErr(true);
+          setIsVisible(true);
         });
     } else setLoader(false);
   };
 
   return (
     <>
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <StatusBar backgroundColor={Colors.white} barStyle="dark-content" />
 
         <BlankSpacer height={16} />
@@ -245,20 +261,21 @@ const RegisterScreen = ({navigation, onPress}) => {
         {loader ? <Loader /> : null}
 
         <Overlay
-          isVisible={popUpErr}
+          isVisible={isVisible}
           overlayStyle={{
             backgroundColor: 'white',
             borderColor: 'white',
             borderRadius: 20,
           }}
-          onBackdropPress={() => setpopUpErr(false)}>
+          onBackdropPress={() => setIsVisible(false)}>
           <FormSuccess
-            errorBtn={() => setpopUpErr(false)}
+            errorBtn={() => setIsVisible(false)}
+            successBtn={() => setIsVisible(false)}
             text={OverlayText}
             error={popUpErr}
           />
         </Overlay>
-      </View>
+      </SafeAreaView>
     </>
   );
 };
