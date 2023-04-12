@@ -92,4 +92,7 @@
     <string name="fui_welcome_back_idp_header">您已经有帐号了</string>
     <string name="fui_welcome_back_idp_prompt">您已经使用了 %1$s。请使用 %2$s 帐号登录以继续操作。</string>
     <string name="fui_welcome_back_password_prompt_body">您已经使用 %1$s 登录了，请输入该帐号的密码。</string>
+    <string name="ucrop_label_edit_photo">裁剪</string>
+    <string name="ucrop_label_original">原始比例</string>
+    <string name="ucrop_menu_crop">裁剪</string>
 </resources>

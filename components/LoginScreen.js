@@ -119,7 +119,7 @@ const LoginScreen = ({navigation, onPress}) => {
     <>
       <View style={styles.container}>
         <BlankSpacer height={16} />
-        <StatusBar backgroundColor={Colors.white} barStyle="dark-content" />
+        <StatusBar backgroundColor="#000" barStyle="light-content" />
         <Image style={styles.logo} source={require('../assets/img/Logo.png')} />
 
         {/* Username TextField */}

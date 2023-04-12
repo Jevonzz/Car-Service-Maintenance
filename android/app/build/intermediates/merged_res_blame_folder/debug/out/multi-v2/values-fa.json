@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-fa/values-fa.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-fa/values-fa.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\d555e6ed4d040aa2d48b1e0113069e58\\transformed\\jetified-firebase-ui-auth-7.2.0\\res\\values-fa\\values-fa.xml",

@@ -28,30 +28,27 @@ const AdminScreen = ({navigation, onPress}) => {
         source={require('../../assets/img/Logo.png')}
       />
       <Text style={styles.word}>Administrator</Text>
-      <View style={{marginTop: 200}}>
-        <TouchableOpacity
-          style={styles.background}
-          onPress={() => navigation.navigate('UpdateCC')}>
-          <Ionicons name="car-sharp" size={40} style={styles.icon} />
-        </TouchableOpacity>
-        <Text style={styles.label}>Update Company Contact</Text>
-      </View>
-      <View style={{marginTop: 50}}>
-        <TouchableOpacity
-          style={styles.background}
-          onPress={() => navigation.navigate('ManageStock')}>
-          <MaterialCommunityIcons name="tools" size={40} style={styles.icon} />
-        </TouchableOpacity>
-        <Text style={styles.label}>Manage Stocks</Text>
-      </View>
-
-      <View style={{marginTop: 50}}>
-        <TouchableOpacity
-          style={styles.background}
-          onPress={() => navigation.navigate('ManageCrew')}>
-          <Octicons name="organization" size={40} style={styles.icon} />
-        </TouchableOpacity>
-        <Text style={styles.label}>Manage Service Crew List</Text>
+      <View style={styles.Icontainer}>
+        <View style={styles.grid}>
+          <TouchableOpacity
+            style={styles.item}
+            onPress={() => navigation.navigate('UpdateCC')}>
+            <Ionicons name="car-sharp" size={40} color="black" />
+            <Text style={styles.title}>Update Company Contact</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.item}
+            onPress={() => navigation.navigate('ManageStock')}>
+            <MaterialCommunityIcons name="tools" size={40} color="black" />
+            <Text style={styles.title}>Manage Stocks</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.item}
+            onPress={() => navigation.navigate('ManageCrew')}>
+            <Octicons name="organization" size={40} color="black" />
+            <Text style={styles.title}>Manage Service Crew List</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -94,12 +91,6 @@ const styles = StyleSheet.create({
     top: '20%',
     fontSize: 20,
   },
-  label: {
-    position: 'relative',
-    alignSelf: 'center',
-    top: '20%',
-    fontSize: 17,
-  },
   background: {
     backgroundColor: '#D3D3D3',
     borderRadius: 100,
@@ -109,11 +100,32 @@ const styles = StyleSheet.create({
     zIndex: -1,
     width: '30%',
   },
-
-  icon: {
-    alignSelf: 'center',
-    top: '0%',
-    zIndex: 1,
+  Iconcontainer: {
+    flex: 1,
+    alignItems: 'flex-end',
+  },
+  grid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginTop: '40%',
+    borderTopColor: '#ddd',
+    paddingVertical: 20,
+  },
+  item: {
+    width: 150,
+    height: 150,
+    marginVertical: 10,
+    backgroundColor: '#f2f2f2',
+    borderRadius: 10,
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
+  title: {
+    fontSize: 17,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
 });
 

@@ -74,7 +74,7 @@ const ForgotPasswordScreen = ({navigation, onPress}) => {
   return (
     <>
       <View style={styles.container}>
-        <StatusBar backgroundColor={Colors.white} barStyle="dark-content" />
+        <StatusBar backgroundColor="#000" barStyle="light-content" />
         <Image style={styles.logo} source={require('../assets/img/Logo.png')} />
 
         <View>

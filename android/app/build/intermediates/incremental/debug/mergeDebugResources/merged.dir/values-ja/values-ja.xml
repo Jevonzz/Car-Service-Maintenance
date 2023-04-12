@@ -143,4 +143,10 @@
     <string name="fui_welcome_back_password_prompt_body">すでに %1$s を使用してログインしています。このアカウントのパスワードを入力してください。</string>
     <string msgid="6264217191555673260" name="search_menu_title">"検索"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="ucrop_crop">比率</string>
+    <string name="ucrop_label_edit_photo">画像編集</string>
+    <string name="ucrop_label_original">オリジナル</string>
+    <string name="ucrop_menu_crop">切り抜き</string>
+    <string name="ucrop_rotate">回転</string>
+    <string name="ucrop_scale">拡大</string>
 </resources>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-v21/values-v21.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\432f616dad66940928a034ca68c6d3bb\\transformed\\media-1.0.0\\res\\values-v21\\values-v21.xml",

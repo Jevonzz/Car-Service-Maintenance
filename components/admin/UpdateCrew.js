@@ -30,10 +30,10 @@ const UpdateCrew = ({route, navigation}) => {
         phone: phone,
         address: address,
       });
+      navigation.navigate('Admin');
       setOverlayText('Crew has successfully updated');
       setpopUpErr(false);
       setIsVisible(true);
-      navigation.navigate('Admin');
     } catch (error) {
       setOverlayText('Error updating the crew');
       setpopUpErr(true);

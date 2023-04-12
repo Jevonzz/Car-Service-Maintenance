@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-land/values-land.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-land/values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\2d2c7b12861cd756ca30358189e24969\\transformed\\material-1.2.1\\res\\values-land\\values-land.xml",

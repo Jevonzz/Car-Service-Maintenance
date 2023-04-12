@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-fi/values-fi.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-fi/values-fi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\c1ce68bdfbeaab12285d1895b28b8032\\transformed\\core-1.7.0\\res\\values-fi\\values-fi.xml",
@@ -35,6 +35,23 @@
                         "startOffsets": "4092",
                         "endColumns": "149",
                         "endOffsets": "4237"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\a04447b45849da530c63915190f1ba9e\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,178,243,293",
+                        "endColumns": "122,64,49,48",
+                        "endOffsets": "173,238,288,337"
+                    },
+                    "to": {
+                        "startLines": "145,146,147,148",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "14844,14967,15032,15082",
+                        "endColumns": "122,64,49,48",
+                        "endOffsets": "14962,15027,15077,15126"
                     }
                 },
                 {

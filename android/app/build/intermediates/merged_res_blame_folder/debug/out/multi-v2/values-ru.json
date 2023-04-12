@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-ru/values-ru.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-ru/values-ru.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\468ee0044363e3c3c34f8f9e1f5c1390\\transformed\\jetified-play-services-base-18.0.1\\res\\values-ru\\values.xml",

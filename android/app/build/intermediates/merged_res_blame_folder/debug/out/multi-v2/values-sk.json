@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-sk/values-sk.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-sk/values-sk.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\a04447b45849da530c63915190f1ba9e\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-sk\\values-sk.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,182",
+                        "endColumns": "69,56,50",
+                        "endOffsets": "120,177,228"
+                    },
+                    "to": {
+                        "startLines": "145,146,147",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "15257,15327,15384",
+                        "endColumns": "69,56,50",
+                        "endOffsets": "15322,15379,15430"
+                    }
+                },
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\723d57b2cdac52b67382be1000af680d\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-sk\\values.xml",
                     "from": {

@@ -16,6 +16,8 @@ import ManageStock from './components/admin/ManageStock';
 import UpdateCC from './components/admin/UpdateCC';
 import AddStock from './components/admin/AddStock';
 import UpdateStock from './components/admin/UpdateStock';
+import UpdateCrew from './components/admin/UpdateCrew';
+import AddCrew from './components/admin/AddCrew';
 
 //Crew
 import CrewScreen from './components/crew/CrewScreen';
@@ -26,6 +28,16 @@ import CreateCSB from './components/crew/CreateCSB';
 
 //User
 import UserScreen from './components/user/UserScreen';
+import ScheduleCarService from './components/user/ScheduleCarService';
+import RegisterCarDetails from './components/user/RegisterCarDetails';
+import RequestCPCarService from './components/user/RequestCPCarService';
+import TrackScreen from './components/user/Track/TrackScreen';
+import ServiceRecord from './components/user/Track/ServiceRecord';
+import CarAppointmentStatus from './components/user/Track/CarAppointmentStatus';
+import BillHistory from './components/user/Track/BillHistory';
+import ProfileScreen from './components/user/Profile/ProfileScreen';
+import EditProfile from './components/user/Profile/EditProfile';
+import EditCarRegistered from './components/user/Profile/EditCarRegistered';
 
 import 'react-native-gesture-handler';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -42,8 +54,7 @@ import {onAuthStateChanged} from 'firebase/auth';
 import {LogBox} from 'react-native';
 import {and} from 'react-native-reanimated';
 import {Provider} from 'react-redux';
-import UpdateCrew from './components/admin/UpdateCrew';
-import AddCrew from './components/admin/AddCrew';
+import {authentication} from './firebase/firebase-config';
 
 const StackNav = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -61,13 +72,96 @@ const Auth = () => {
   );
 };
 
-const User = () => {
+const UserHomeScreen = () => {
   return (
     <StackNav.Navigator
       screenOptions={{headerShown: false}}
-      initialRouteName="User">
-      <StackNav.Screen name="User" component={UserScreen}></StackNav.Screen>
+      initialRouteName="UserScreen">
+      <StackNav.Screen name="UserScreen" component={UserScreen} />
+      <StackNav.Screen
+        name="ScheduleCarService"
+        component={ScheduleCarService}
+      />
+      <StackNav.Screen
+        name="RegisterCarDetails"
+        component={RegisterCarDetails}
+      />
+      <StackNav.Screen
+        name="RequestCPCarService"
+        component={RequestCPCarService}
+      />
     </StackNav.Navigator>
+  );
+};
+
+const Track = () => {
+  return (
+    <StackNav.Navigator
+      screenOptions={{headerShown: false}}
+      initialRouteName="TrackScreen">
+      <StackNav.Screen name="TrackScreen" component={TrackScreen} />
+      <StackNav.Screen
+        name="CarAppointmentStatus"
+        component={CarAppointmentStatus}
+      />
+      <StackNav.Screen name="ServiceRecord" component={ServiceRecord} />
+      <StackNav.Screen name="BillHistory" component={BillHistory} />
+    </StackNav.Navigator>
+  );
+};
+
+const Profile = () => {
+  return (
+    <StackNav.Navigator
+      screenOptions={{headerShown: false}}
+      initialRouteName="ProfileScreen">
+      <StackNav.Screen name="ProfileScreen" component={ProfileScreen} />
+      <StackNav.Screen name="EditProfile" component={EditProfile} />
+      <StackNav.Screen
+        name="EditCarRegistered"
+        component={EditCarRegistered}></StackNav.Screen>
+    </StackNav.Navigator>
+  );
+};
+
+const User = () => {
+  return (
+    <Tab.Navigator
+      screenOptions={({route}) => ({
+        tabBarActiveTintColor: 'black',
+        tabBarInactiveTintColor: 'black',
+        tabBarLabelStyle: {
+          fontSize: 12,
+        },
+        headerShown: false,
+        tabBarHideOnKeyboard: true,
+        tabBarStyle: {
+          height: 60,
+        },
+        tabBarIcon: ({focused, color, size, padding}) => {
+          let iconName;
+          if (route.name === 'User') {
+            iconName = focused ? 'home' : 'home-outline';
+          } else if (route.name === 'Track') {
+            iconName = focused ? 'bookmarks' : 'bookmarks-outline';
+          } else if (route.name === 'Profile') {
+            iconName = focused ? 'person-circle' : 'person-circle-outline';
+          }
+
+          return (
+            <Ionicons
+              name={iconName}
+              size={size}
+              color={color}
+              style={{paddingBottom: padding, marginTop: 10}}
+            />
+          );
+        },
+      })}>
+      <Tab.Screen name="User" component={UserHomeScreen} />
+      <Tab.Screen name="Track" component={Track} />
+      <Tab.Screen name="Profile" component={Profile} />
+    </Tab.Navigator>
   );
 };
 
@@ -116,18 +210,14 @@ const Admin = () => {
 };
 
 const App = () => {
-  //   useEffect(() => {
-  //     getCurrentUser();
-  //   }, []);
-
   return (
     <NavigationContainer>
       <StackNav.Navigator screenOptions={{headerShown: false}}>
         <StackNav.Screen name="Splash" component={SplashScreen} />
         <StackNav.Screen name="Auth" component={Auth} />
         <StackNav.Screen name="UserScreen" component={User} />
-        <StackNav.Screen name="CrewScreen" component={Crew} />
-        <StackNav.Screen name="AdminScreen" component={Admin} />
+        {/* <StackNav.Screen name="CrewScreen" component={Crew} />
+        <StackNav.Screen name="AdminScreen" component={Admin} /> */}
       </StackNav.Navigator>
     </NavigationContainer>
   );

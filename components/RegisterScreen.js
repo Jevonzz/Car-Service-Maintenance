@@ -114,10 +114,10 @@ const RegisterScreen = ({navigation, onPress}) => {
           const user = userCredentials.user;
           query(user.uid);
           setLoader(false);
+          navigation.navigate('Login');
           setOverlayText('Sign up successfully');
           setIsVisible(true);
           setpopUpErr(false);
-          navigation.navigate('Login');
         })
         .catch(e => {
           setLoader(false);
@@ -131,7 +131,7 @@ const RegisterScreen = ({navigation, onPress}) => {
   return (
     <>
       <SafeAreaView style={styles.container}>
-        <StatusBar backgroundColor={Colors.white} barStyle="dark-content" />
+        <StatusBar backgroundColor="#000" barStyle="light-content" />
 
         <BlankSpacer height={16} />
         <View>

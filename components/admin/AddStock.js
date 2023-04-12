@@ -22,10 +22,10 @@ const AddStockScreen = ({navigation}) => {
     const stockRef = collection(firebaseDB, 'stock');
     try {
       await addDoc(stockRef, {name, quantity: parseInt(quantity)});
+      navigation.navigate('ManageStock');
       setOverlayText('Stock has successfully added');
       setpopUpErr(false);
       setIsVisible(true);
-      navigation.navigate('ManageStock');
     } catch (error) {
       setOverlayText('Error Adding Stock');
       setpopUpErr(true);

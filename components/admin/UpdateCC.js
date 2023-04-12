@@ -18,7 +18,7 @@ import Loader from '../shared/loader';
 
 const UpdateCC = ({navigation}) => {
   const [prevContact, setPrevContact] = useState(null);
-  const [address, setAddress] = useState('');
+  const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [loader, setLoader] = useState(false);
   const [OverlayText, setOverlayText] = useState('');
@@ -41,7 +41,7 @@ const UpdateCC = ({navigation}) => {
   // Update the contact in the database
   const updateContact = async () => {
     setLoader(true);
-    if (address.trim() === '' || phone.trim() === '') {
+    if (email.trim() === '' || phone.trim() === '') {
       setLoader(false);
       setOverlayText('Please fill all fields');
       setpopUpErr(true);
@@ -56,14 +56,14 @@ const UpdateCC = ({navigation}) => {
       try {
         const docRef = doc(firebaseDB, 'company', 'contact');
         await updateDoc(docRef, {
-          address,
+          email,
           phone,
         });
+        navigation.navigate('Admin');
         setIsVisible(true);
         setOverlayText('Updated Successfully');
         setpopUpErr(false);
         setLoader(false);
-        navigation.navigate('Admin');
       } catch (e) {
         setIsVisible(true);
         setLoader(false);
@@ -78,8 +78,8 @@ const UpdateCC = ({navigation}) => {
       <Text style={styles.title}>Update Company Contact</Text>
       {prevContact && (
         <View>
-          <Text style={styles.label}>Current Address:</Text>
-          <Text style={styles.value}>{prevContact.address}</Text>
+          <Text style={styles.label}>Current Email:</Text>
+          <Text style={styles.value}>{prevContact.email}</Text>
           <Text style={styles.label}>Current Phone:</Text>
           <Text style={styles.value}>{prevContact.phone}</Text>
         </View>
@@ -93,14 +93,12 @@ const UpdateCC = ({navigation}) => {
         placeholder="Enter new contact number"
         keyboardType="phone-pad"
       />
-      <Text style={styles.label}>New Address:</Text>
+      <Text style={styles.label}>New Email:</Text>
       <TextInput
-        multiline={true}
-        numberOfLines={3}
         style={styles.input}
-        value={address}
-        onChangeText={setAddress}
-        placeholder="Enter new address"
+        value={email}
+        onChangeText={setEmail}
+        placeholder="Enter new email"
       />
       <TouchableOpacity style={styles.button} onPress={updateContact}>
         <Text style={styles.buttonText}>Update Contact</Text>

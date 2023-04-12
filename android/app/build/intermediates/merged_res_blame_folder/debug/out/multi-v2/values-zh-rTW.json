@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\468ee0044363e3c3c34f8f9e1f5c1390\\transformed\\jetified-play-services-base-18.0.1\\res\\values-zh-rTW\\values.xml",
@@ -103,6 +103,23 @@
                         "startOffsets": "4668,4752,4844,4945",
                         "endColumns": "83,91,100,92",
                         "endOffsets": "4747,4839,4940,5033"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\a04447b45849da530c63915190f1ba9e\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,132,186,240,287",
+                        "endColumns": "76,53,53,46,116",
+                        "endOffsets": "127,181,235,282,399"
+                    },
+                    "to": {
+                        "startLines": "145,146,147,148,149",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "11798,11875,11929,11983,12030",
+                        "endColumns": "76,53,53,46,116",
+                        "endOffsets": "11870,11924,11978,12025,12142"
                     }
                 }
             ]

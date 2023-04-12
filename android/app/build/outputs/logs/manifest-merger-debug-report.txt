@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-26:12
-MERGED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-26:12
+ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-28:12
+INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-28:12
+MERGED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-28:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\User\.gradle\caches\transforms-3\4e2cc5d68941c5f024bcd1028c6c54d8\transformed\jetified-flipper-network-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\User\.gradle\caches\transforms-3\d95040be8781383f97a509a6fb090841\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\User\.gradle\caches\transforms-3\b465f98537f963958c13d6768614082d\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:8:1-18:12
@@ -15,13 +15,14 @@ MERGED from [:react-native-async-storage_async-storage] C:\Users\User\Desktop\FY
 MERGED from [:react-native-community_masked-view] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\@react-native-community\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:lottie-react-native] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\lottie-react-native\src\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-33:12
 MERGED from [:react-native-safe-area-context] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-android:0.71.2] C:\Users\User\.gradle\caches\transforms-3\77df8286a376811112008683c5ca92fe\transformed\jetified-react-android-0.71.2-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\User\.gradle\caches\transforms-3\bc0dd1f8a0edd6b304b3e224a384c484\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\User\.gradle\caches\transforms-3\ec431be0dcb7abf139c1fb18a691dea4\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\User\.gradle\caches\transforms-3\4dbf1d7914237ab1f89ba3e01adabf3b\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\User\.gradle\caches\transforms-3\d2616bcde2e2aeeb96199db5bcb65beb\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\User\.gradle\caches\transforms-3\979790e64010529f53efec3dae7db127\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:2:1-17:12
 MERGED from [com.facebook.react:hermes-android:0.71.2] C:\Users\User\.gradle\caches\transforms-3\e34aabac21c000b4fcd11b2bc39f72f5\transformed\jetified-hermes-android-0.71.2-debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-reanimated] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-reanimated\android\build\.transforms\10580a28ae7275d992f59dec24bc9d06\transformed\jetified-react-native-reanimated-71-hermes\AndroidManifest.xml:2:1-9:12
@@ -52,6 +53,7 @@ MERGED from [com.google.android.material:material:1.2.1] C:\Users\User\.gradle\c
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\User\.gradle\caches\transforms-3\2491079ec791187941618499afd4e3d0\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] C:\Users\User\.gradle\caches\transforms-3\582e293eeee5b36c20a980c015cb6d40\transformed\jetified-library-1.6.1\AndroidManifest.xml:6:1-15:12
 MERGED from [com.airbnb.android:lottie:5.1.1] C:\Users\User\.gradle\caches\transforms-3\04709201b9bc331b8cd8a6c0237f24f8\transformed\jetified-lottie-5.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] C:\Users\User\.gradle\caches\transforms-3\a04447b45849da530c63915190f1ba9e\transformed\jetified-ucrop-2.2.6-native\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\User\.gradle\caches\transforms-3\6c2bf8efa41ca69d6c96c3b6d859f53c\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\User\.gradle\caches\transforms-3\10e335f4bf4d1c8d8ebc49725d7f940a\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\User\.gradle\caches\transforms-3\cc6cacd17677d36f7181721ce201ddff\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
@@ -84,18 +86,17 @@ MERGED from [androidx.tracing:tracing:1.1.0] C:\Users\User\.gradle\caches\transf
 MERGED from [com.facebook.fresco:middleware:2.6.0] C:\Users\User\.gradle\caches\transforms-3\7c9e671eaf30c1b7f2ea53eb675ae1f5\transformed\jetified-middleware-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\User\.gradle\caches\transforms-3\3dbd86d3ba6d5bee17334c460a5cf551\transformed\jetified-ui-common-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\User\.gradle\caches\transforms-3\c7221a136c875c3c1d1b26c8b7307881\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\User\.gradle\caches\transforms-3\1d19ca2dbcc8e7e03fe2c5c1e1c2c756\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\User\.gradle\caches\transforms-3\341962aa71af30d43d5865a5b3308a10\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-3\f6c6f09b9c57005709cf8ce990304fbd\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\User\.gradle\caches\transforms-3\f136ed31dfbef54f36c0fca85d3867ec\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.6.0] C:\Users\User\.gradle\caches\transforms-3\05a4f2e0ee693cef407b7bc2e372b171\transformed\jetified-core-ktx-1.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\User\.gradle\caches\transforms-3\31cafb30fd68ff16b4165bef8e2c39a9\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\User\.gradle\caches\transforms-3\504693a87ebb544662c9cf8695177a0f\transformed\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\User\.gradle\caches\transforms-3\469cab2cf491ff034f814f4ec4127266\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\User\.gradle\caches\transforms-3\1d19ca2dbcc8e7e03fe2c5c1e1c2c756\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\User\.gradle\caches\transforms-3\274bfb67affae7bbfc32aad30188ac0d\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\User\.gradle\caches\transforms-3\124806dfaf185308bea3ca2fa46bc7fb\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\User\.gradle\caches\transforms-3\432f616dad66940928a034ca68c6d3bb\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\User\.gradle\caches\transforms-3\be043a1d1337519fbbbe1bb93b9283bb\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\User\.gradle\caches\transforms-3\341962aa71af30d43d5865a5b3308a10\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c48e69a44880948f0cb8cdf7ac69e063\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\User\.gradle\caches\transforms-3\aa7633cc3c2322aab15c0163ed94490c\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\User\.gradle\caches\transforms-3\e43286682ff95f68f3ad9d63851e796b\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -107,12 +108,14 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\User\.gradle\c
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\User\.gradle\caches\transforms-3\eb5a3a3e09dba29e56e3353bf027a84b\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\User\.gradle\caches\transforms-3\392b5f8d1665b13321d873b0daca9648\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\User\.gradle\caches\transforms-3\e824ccf311f65b9d1a3af6d039d67b40\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-3\f6c6f09b9c57005709cf8ce990304fbd\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\User\.gradle\caches\transforms-3\354542b68bf4fc78831835f91abe054b\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\User\.gradle\caches\transforms-3\9189485287b0304ec33c8c93935a5bd1\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\User\.gradle\caches\transforms-3\25ad0a247444641c5fa9538c034fce66\transformed\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\User\.gradle\caches\transforms-3\fea428f0ae7630cb2b4793f900d63b1e\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\User\.gradle\caches\transforms-3\b42e73c3c4af6e8204e0e38286f7e761\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\User\.gradle\caches\transforms-3\8e8a823182928bfe9e2bbcc9eba26299\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\User\.gradle\caches\transforms-3\5a8d82d6cf69ea5561cfa578c6dd5109\transformed\exifinterface-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\User\.gradle\caches\transforms-3\1f30fd7028311720bc5fac95eb0be60d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\User\.gradle\caches\transforms-3\58ef946335aa979b8e695b54799bec9f\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\User\.gradle\caches\transforms-3\ce509184024cb4afb9855b4915879d8e\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -128,13 +131,13 @@ INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\a
 		INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-28:12
 		INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\debug\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\debug\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:1-28:12
 		INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -162,14 +165,26 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\User\.gradle\caches\transforms-3\8d0f2dfc6a3bb4dc845febc57b575647\transformed\jetified-play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:5:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:6:5-80
+MERGED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-81
+MERGED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:6:5-25:19
-MERGED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:6:5-25:19
-MERGED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:6:5-25:19
+ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:8:5-27:19
+MERGED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:8:5-27:19
+MERGED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:8:5-27:19
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\User\.gradle\caches\transforms-3\d555e6ed4d040aa2d48b1e0113069e58\transformed\jetified-firebase-ui-auth-7.2.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\User\.gradle\caches\transforms-3\d555e6ed4d040aa2d48b1e0113069e58\transformed\jetified-firebase-ui-auth-7.2.0\AndroidManifest.xml:15:5-107:19
 MERGED from [:react-native-firebase_app] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-30:19
 MERGED from [:react-native-firebase_app] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-30:19
+MERGED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:5-31:19
+MERGED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:5-31:19
 MERGED from [com.facebook.react:react-android:0.71.2] C:\Users\User\.gradle\caches\transforms-3\77df8286a376811112008683c5ca92fe\transformed\jetified-react-android-0.71.2-debug\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-android:0.71.2] C:\Users\User\.gradle\caches\transforms-3\77df8286a376811112008683c5ca92fe\transformed\jetified-react-android-0.71.2-debug\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\User\.gradle\caches\transforms-3\979790e64010529f53efec3dae7db127\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:7:5-15:19
@@ -235,53 +250,53 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Us
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\User\.gradle\caches\transforms-3\c1ce68bdfbeaab12285d1895b28b8032\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:8:7-39
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:8:7-39
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:10:7-39
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:10:7-39
 	tools:ignore
 		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\debug\AndroidManifest.xml:10:9-48
 	android:roundIcon
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:10:7-52
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:10:7-52
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:12:7-52
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:12:7-52
 	tools:targetApi
 		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\debug\AndroidManifest.xml:9:9-29
 	android:icon
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:9:7-41
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:9:7-41
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:11:7-41
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:11:7-41
 	android:allowBackup
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:11:7-34
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:11:7-34
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:13:7-34
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:13:7-34
 	android:theme
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:12:7-38
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:12:7-38
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:14:7-38
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:14:7-38
 	android:usesCleartextTraffic
 		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\debug\AndroidManifest.xml:8:9-44
 	android:name
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:7:7-38
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:7:7-38
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:9:7-38
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:9:7-38
 activity#com.carservicemanagement.MainActivity
-ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:13:7-24:18
+ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:15:7-26:18
 	android:label
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:17:9-41
 	android:launchMode
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:19:9-40
 	android:windowSoftInputMode
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:18:9-51
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:20:9-51
 	android:exported
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:19:9-32
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:21:9-32
 	android:configChanges
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:16:9-118
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:18:9-118
 	android:name
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:14:9-37
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:16:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:20:9-23:25
+ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:22:9-25:25
 action#android.intent.action.MAIN
-ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:21:13-65
+ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:23:13-65
 	android:name
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:21:21-62
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:23:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:22:13-73
+ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:24:13-73
 	android:name
-		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:22:23-70
+		ADDED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml:24:23-70
 uses-sdk
 INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\android\app\src\main\AndroidManifest.xml
@@ -306,6 +321,8 @@ MERGED from [:lottie-react-native] C:\Users\User\Desktop\FYP\MA\backup\Car-Servi
 MERGED from [:lottie-react-native] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\lottie-react-native\src\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -318,8 +335,8 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\User\.gradle\cach
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\User\.gradle\caches\transforms-3\bc0dd1f8a0edd6b304b3e224a384c484\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\User\.gradle\caches\transforms-3\ec431be0dcb7abf139c1fb18a691dea4\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\User\.gradle\caches\transforms-3\ec431be0dcb7abf139c1fb18a691dea4\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\User\.gradle\caches\transforms-3\4dbf1d7914237ab1f89ba3e01adabf3b\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\User\.gradle\caches\transforms-3\4dbf1d7914237ab1f89ba3e01adabf3b\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\User\.gradle\caches\transforms-3\d2616bcde2e2aeeb96199db5bcb65beb\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\User\.gradle\caches\transforms-3\d2616bcde2e2aeeb96199db5bcb65beb\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\User\.gradle\caches\transforms-3\979790e64010529f53efec3dae7db127\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\User\.gradle\caches\transforms-3\979790e64010529f53efec3dae7db127\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:hermes-android:0.71.2] C:\Users\User\.gradle\caches\transforms-3\e34aabac21c000b4fcd11b2bc39f72f5\transformed\jetified-hermes-android-0.71.2-debug\AndroidManifest.xml:5:5-7:41
@@ -380,6 +397,8 @@ MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] C:\Users\Use
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] C:\Users\User\.gradle\caches\transforms-3\582e293eeee5b36c20a980c015cb6d40\transformed\jetified-library-1.6.1\AndroidManifest.xml:11:5-13:41
 MERGED from [com.airbnb.android:lottie:5.1.1] C:\Users\User\.gradle\caches\transforms-3\04709201b9bc331b8cd8a6c0237f24f8\transformed\jetified-lottie-5.1.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.airbnb.android:lottie:5.1.1] C:\Users\User\.gradle\caches\transforms-3\04709201b9bc331b8cd8a6c0237f24f8\transformed\jetified-lottie-5.1.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] C:\Users\User\.gradle\caches\transforms-3\a04447b45849da530c63915190f1ba9e\transformed\jetified-ucrop-2.2.6-native\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] C:\Users\User\.gradle\caches\transforms-3\a04447b45849da530c63915190f1ba9e\transformed\jetified-ucrop-2.2.6-native\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\User\.gradle\caches\transforms-3\6c2bf8efa41ca69d6c96c3b6d859f53c\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\User\.gradle\caches\transforms-3\6c2bf8efa41ca69d6c96c3b6d859f53c\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\User\.gradle\caches\transforms-3\10e335f4bf4d1c8d8ebc49725d7f940a\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
@@ -444,12 +463,6 @@ MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\User\.gradle\caches\t
 MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\User\.gradle\caches\transforms-3\3dbd86d3ba6d5bee17334c460a5cf551\transformed\jetified-ui-common-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\User\.gradle\caches\transforms-3\c7221a136c875c3c1d1b26c8b7307881\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\User\.gradle\caches\transforms-3\c7221a136c875c3c1d1b26c8b7307881\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\User\.gradle\caches\transforms-3\1d19ca2dbcc8e7e03fe2c5c1e1c2c756\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\User\.gradle\caches\transforms-3\1d19ca2dbcc8e7e03fe2c5c1e1c2c756\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\User\.gradle\caches\transforms-3\341962aa71af30d43d5865a5b3308a10\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] C:\Users\User\.gradle\caches\transforms-3\341962aa71af30d43d5865a5b3308a10\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-3\f6c6f09b9c57005709cf8ce990304fbd\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-3\f6c6f09b9c57005709cf8ce990304fbd\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\User\.gradle\caches\transforms-3\f136ed31dfbef54f36c0fca85d3867ec\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\User\.gradle\caches\transforms-3\f136ed31dfbef54f36c0fca85d3867ec\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.6.0] C:\Users\User\.gradle\caches\transforms-3\05a4f2e0ee693cef407b7bc2e372b171\transformed\jetified-core-ktx-1.6.0\AndroidManifest.xml:5:5-7:41
@@ -460,6 +473,8 @@ MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\User\.gradle\caches\transfor
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\User\.gradle\caches\transforms-3\504693a87ebb544662c9cf8695177a0f\transformed\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\User\.gradle\caches\transforms-3\469cab2cf491ff034f814f4ec4127266\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\User\.gradle\caches\transforms-3\469cab2cf491ff034f814f4ec4127266\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\User\.gradle\caches\transforms-3\1d19ca2dbcc8e7e03fe2c5c1e1c2c756\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\User\.gradle\caches\transforms-3\1d19ca2dbcc8e7e03fe2c5c1e1c2c756\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\User\.gradle\caches\transforms-3\274bfb67affae7bbfc32aad30188ac0d\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\User\.gradle\caches\transforms-3\274bfb67affae7bbfc32aad30188ac0d\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\User\.gradle\caches\transforms-3\124806dfaf185308bea3ca2fa46bc7fb\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
@@ -468,6 +483,8 @@ MERGED from [androidx.media:media:1.0.0] C:\Users\User\.gradle\caches\transforms
 MERGED from [androidx.media:media:1.0.0] C:\Users\User\.gradle\caches\transforms-3\432f616dad66940928a034ca68c6d3bb\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\User\.gradle\caches\transforms-3\be043a1d1337519fbbbe1bb93b9283bb\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\User\.gradle\caches\transforms-3\be043a1d1337519fbbbe1bb93b9283bb\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\User\.gradle\caches\transforms-3\341962aa71af30d43d5865a5b3308a10\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\User\.gradle\caches\transforms-3\341962aa71af30d43d5865a5b3308a10\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c48e69a44880948f0cb8cdf7ac69e063\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\User\.gradle\caches\transforms-3\c48e69a44880948f0cb8cdf7ac69e063\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\User\.gradle\caches\transforms-3\aa7633cc3c2322aab15c0163ed94490c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
@@ -490,6 +507,8 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\User\.gradle\caches\
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\User\.gradle\caches\transforms-3\392b5f8d1665b13321d873b0daca9648\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\User\.gradle\caches\transforms-3\e824ccf311f65b9d1a3af6d039d67b40\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\User\.gradle\caches\transforms-3\e824ccf311f65b9d1a3af6d039d67b40\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-3\f6c6f09b9c57005709cf8ce990304fbd\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-3\f6c6f09b9c57005709cf8ce990304fbd\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\User\.gradle\caches\transforms-3\354542b68bf4fc78831835f91abe054b\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\User\.gradle\caches\transforms-3\354542b68bf4fc78831835f91abe054b\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\User\.gradle\caches\transforms-3\9189485287b0304ec33c8c93935a5bd1\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
@@ -502,6 +521,8 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\User\.gradle\caches
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\User\.gradle\caches\transforms-3\b42e73c3c4af6e8204e0e38286f7e761\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\User\.gradle\caches\transforms-3\8e8a823182928bfe9e2bbcc9eba26299\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\User\.gradle\caches\transforms-3\8e8a823182928bfe9e2bbcc9eba26299\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\User\.gradle\caches\transforms-3\5a8d82d6cf69ea5561cfa578c6dd5109\transformed\exifinterface-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.1.0-beta01] C:\Users\User\.gradle\caches\transforms-3\5a8d82d6cf69ea5561cfa578c6dd5109\transformed\exifinterface-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\User\.gradle\caches\transforms-3\1f30fd7028311720bc5fac95eb0be60d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\User\.gradle\caches\transforms-3\1f30fd7028311720bc5fac95eb0be60d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\User\.gradle\caches\transforms-3\58ef946335aa979b8e695b54799bec9f\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -788,6 +809,36 @@ ADDED from [:react-native-firebase_app] C:\Users\User\Desktop\FYP\MA\backup\Car-
 		ADDED from [:react-native-firebase_app] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-35
 	android:name
 		ADDED from [:react-native-firebase_app] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-88
+queries
+ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:15
+intent#action:name:android.media.action.IMAGE_CAPTURE
+ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+action#android.media.action.IMAGE_CAPTURE
+ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-73
+	android:name
+		ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-70
+provider#com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider
+ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-26:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-47
+	android:authorities
+		ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-60
+	android:exported
+		ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-94
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:78
+	android:resource
+		ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-75
+	android:name
+		ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-67
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-30:72
+	android:theme
+		ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-69
+	android:name
+		ADDED from [:react-native-image-crop-picker] C:\Users\User\Desktop\FYP\MA\backup\Car-Service-Maintenance-main\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-60
 meta-data#com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar
 ADDED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\User\.gradle\caches\transforms-3\979790e64010529f53efec3dae7db127\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:11:13-13:85
 	android:value

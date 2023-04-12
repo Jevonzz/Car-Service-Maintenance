@@ -41,10 +41,10 @@ const UpdateStockScreen = ({route, navigation}) => {
     try {
       const stockRef = doc(firebaseDB, 'stock', route.params.id);
       await deleteDoc(stockRef);
+      navigation.navigate('Admin');
       setOverlayText('Stock has successfully deleted');
       setpopUpErr(false);
       setIsVisible(true);
-      navigation.navigate('Admin');
     } catch (error) {
       setOverlayText('Error deleting the stock');
       setpopUpErr(true);

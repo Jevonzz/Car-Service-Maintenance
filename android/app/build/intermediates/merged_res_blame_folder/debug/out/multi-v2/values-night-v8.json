@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\6c2bf8efa41ca69d6c96c3b6d859f53c\\transformed\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",

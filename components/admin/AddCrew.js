@@ -24,10 +24,10 @@ const AddCrew = ({navigation}) => {
     const CrewRef = collection(firebaseDB, 'crew');
     try {
       await addDoc(CrewRef, {name, email, phone, address});
+      navigation.navigate('Admin');
       setOverlayText('Crew has successfully added');
       setpopUpErr(false);
       setIsVisible(true);
-      navigation.navigate('Admin');
     } catch (error) {
       setOverlayText('Error Adding Crew');
       setpopUpErr(true);

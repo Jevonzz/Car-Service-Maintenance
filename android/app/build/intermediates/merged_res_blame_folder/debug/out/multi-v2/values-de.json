@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-de/values-de.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-de/values-de.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\341962aa71af30d43d5865a5b3308a10\\transformed\\browser-1.4.0\\res\\values-de\\values-de.xml",
@@ -103,6 +103,23 @@
                         "startOffsets": "3172,3281,3445,3573,3685,3863,3994,4115,4379,4559,4671,4840,4971,5133,5309,5380,5443",
                         "endColumns": "108,163,127,111,177,130,120,118,179,111,168,130,161,175,70,62,79",
                         "endOffsets": "3276,3440,3568,3680,3858,3989,4110,4229,4554,4666,4835,4966,5128,5304,5375,5438,5518"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\a04447b45849da530c63915190f1ba9e\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-de\\values-de.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,121,179",
+                        "endColumns": "65,57,55",
+                        "endOffsets": "116,174,230"
+                    },
+                    "to": {
+                        "startLines": "145,146,147",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "15420,15486,15544",
+                        "endColumns": "65,57,55",
+                        "endOffsets": "15481,15539,15595"
                     }
                 }
             ]

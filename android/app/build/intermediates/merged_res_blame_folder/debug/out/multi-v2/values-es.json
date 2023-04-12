@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-es/values-es.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-es/values-es.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\a04447b45849da530c63915190f1ba9e\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,101,164,222,273,320",
+                        "endColumns": "45,62,57,50,46,47",
+                        "endOffsets": "96,159,217,268,315,363"
+                    },
+                    "to": {
+                        "startLines": "145,146,147,148,149,150",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "15684,15730,15793,15851,15902,15949",
+                        "endColumns": "45,62,57,50,46,47",
+                        "endOffsets": "15725,15788,15846,15897,15944,15992"
+                    }
+                },
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\468ee0044363e3c3c34f8f9e1f5c1390\\transformed\\jetified-play-services-base-18.0.1\\res\\values-es\\values.xml",
                     "from": {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-bg/values-bg.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\6c2bf8efa41ca69d6c96c3b6d859f53c\\transformed\\appcompat-1.4.1\\res\\values-bg\\values-bg.xml",

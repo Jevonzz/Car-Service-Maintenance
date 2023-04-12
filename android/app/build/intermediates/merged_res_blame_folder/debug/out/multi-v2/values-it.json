@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.carservicemanagement.app-mergeDebugResources-38:/values-it/values-it.xml",
+            "outputFile": "com.carservicemanagement.app-mergeDebugResources-40:/values-it/values-it.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\d555e6ed4d040aa2d48b1e0113069e58\\transformed\\jetified-firebase-ui-auth-7.2.0\\res\\values-it\\values-it.xml",
@@ -103,6 +103,23 @@
                         "startOffsets": "3133,3238,3389,3514,3622,3780,3908,4028,4268,4425,4532,4686,4813,4969,5150,5217,5278",
                         "endColumns": "104,150,124,107,157,127,119,103,156,106,153,126,155,180,66,60,76",
                         "endOffsets": "3233,3384,3509,3617,3775,3903,4023,4127,4420,4527,4681,4808,4964,5145,5212,5273,5350"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\a04447b45849da530c63915190f1ba9e\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-it\\values-it.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,120,179",
+                        "endColumns": "64,58,50",
+                        "endOffsets": "115,174,225"
+                    },
+                    "to": {
+                        "startLines": "145,146,147",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "15293,15358,15417",
+                        "endColumns": "64,58,50",
+                        "endOffsets": "15353,15412,15463"
                     }
                 }
             ]
