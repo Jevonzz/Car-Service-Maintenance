@@ -23,13 +23,7 @@ const TrackScreen = ({navigation, onPress}) => {
             style={styles.item}
             onPress={() => navigation.navigate('ServiceRecord')}>
             <Ionicons name="car-sharp" size={40} color="black" />
-            <Text style={styles.title}> Car Service Record</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.item}
-            onPress={() => navigation.navigate('BillHistory')}>
-            <Octicons name="history" size={35} color="black" />
-            <Text style={styles.title}> Bill History</Text>
+            <Text style={styles.title}> Car Service Record & Bill</Text>
           </TouchableOpacity>
         </View>
       </View>

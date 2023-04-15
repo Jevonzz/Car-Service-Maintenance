@@ -34,10 +34,10 @@ import RequestCPCarService from './components/user/RequestCPCarService';
 import TrackScreen from './components/user/Track/TrackScreen';
 import ServiceRecord from './components/user/Track/ServiceRecord';
 import CarAppointmentStatus from './components/user/Track/CarAppointmentStatus';
-import BillHistory from './components/user/Track/BillHistory';
 import ProfileScreen from './components/user/Profile/ProfileScreen';
 import EditProfile from './components/user/Profile/EditProfile';
 import EditCarRegistered from './components/user/Profile/EditCarRegistered';
+import SelectCar from './components/user/SelectCar';
 
 import 'react-native-gesture-handler';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -82,6 +82,7 @@ const UserHomeScreen = () => {
         name="ScheduleCarService"
         component={ScheduleCarService}
       />
+      <StackNav.Screen name="SelectCar" component={SelectCar} />
       <StackNav.Screen
         name="RegisterCarDetails"
         component={RegisterCarDetails}
@@ -105,7 +106,6 @@ const Track = () => {
         component={CarAppointmentStatus}
       />
       <StackNav.Screen name="ServiceRecord" component={ServiceRecord} />
-      <StackNav.Screen name="BillHistory" component={BillHistory} />
     </StackNav.Navigator>
   );
 };
@@ -216,8 +216,8 @@ const App = () => {
         <StackNav.Screen name="Splash" component={SplashScreen} />
         <StackNav.Screen name="Auth" component={Auth} />
         <StackNav.Screen name="UserScreen" component={User} />
-        {/* <StackNav.Screen name="CrewScreen" component={Crew} />
-        <StackNav.Screen name="AdminScreen" component={Admin} /> */}
+        <StackNav.Screen name="CrewScreen" component={Crew} />
+        <StackNav.Screen name="AdminScreen" component={Admin} />
       </StackNav.Navigator>
     </NavigationContainer>
   );

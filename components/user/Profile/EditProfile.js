@@ -73,7 +73,7 @@ const EditProfile = ({navigation, route}) => {
         placeholder="Phone Number"
         value={phone}
         onChangeText={setPhone}
-        keyboardType="number"
+        keyboardType="numeric"
       />
       <TouchableOpacity
         style={styles.updateButton}
