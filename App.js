@@ -24,6 +24,7 @@ import CrewScreen from './components/crew/CrewScreen';
 import ManageAppointment from './components/crew/ManageAppointment';
 import UpdateStatus from './components/crew/UpdateStatus';
 import RecordCSI from './components/crew/RecordCSI';
+import FetchCompletedAppointments from './components/crew/FetchCompletedAppointments';
 import CreateCSB from './components/crew/CreateCSB';
 
 //User
@@ -178,6 +179,9 @@ const Crew = () => {
         name="UpdateStatus"
         component={UpdateStatus}></StackNav.Screen>
       <StackNav.Screen name="RecordCSI" component={RecordCSI}></StackNav.Screen>
+      <StackNav.Screen
+        name="FetchCompletedAppointments"
+        component={FetchCompletedAppointments}></StackNav.Screen>
       <StackNav.Screen name="CreateCSB" component={CreateCSB}></StackNav.Screen>
     </StackNav.Navigator>
   );

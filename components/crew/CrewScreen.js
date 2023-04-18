@@ -40,7 +40,13 @@ const CrewScreen = ({navigation, onPress}) => {
             style={styles.item}
             onPress={() => navigation.navigate('UpdateStatus')}>
             <Ionicons name="car-sharp" size={40} color="black" />
-            <Text style={styles.title}>Update Service Status</Text>
+            <Text style={styles.title}>Update Car Service Status</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.item}
+            onPress={() => navigation.navigate('FetchCompletedAppointments')}>
+            <Ionicons name="ios-newspaper-outline" size={40} color="black" />
+            <Text style={styles.title}>Create Car Bill</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.item}
@@ -50,13 +56,7 @@ const CrewScreen = ({navigation, onPress}) => {
               size={40}
               color="black"
             />
-            <Text style={styles.title}>Record Car Service</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.item}
-            onPress={() => navigation.navigate('CreateCSB')}>
-            <Ionicons name="ios-newspaper-outline" size={40} color="black" />
-            <Text style={styles.title}>Create Car Bill</Text>
+            <Text style={styles.title}>Records Of Completed Car Service</Text>
           </TouchableOpacity>
         </View>
       </View>

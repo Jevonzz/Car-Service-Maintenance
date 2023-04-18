@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {View, Text, TouchableOpacity, FlatList, StyleSheet} from 'react-native';
 import {firebaseDB, authentication} from '../../firebase/firebase-config';
 import {collection, getDocs} from 'firebase/firestore/lite';
+import Colors from '../const/color';
 
 const SelectCar = ({navigation, route}) => {
   const [cars, setCars] = useState([]);
@@ -49,12 +50,15 @@ const SelectCar = ({navigation, route}) => {
 
   return (
     <View style={styles.container}>
+      <View style={styles.Rectangle} />
       <Text style={styles.title}>Select Your Car Here</Text>
-      <FlatList
-        data={cars}
-        renderItem={renderCarItem}
-        keyExtractor={item => item.id}
-      />
+      <View style={styles.inputContainer}>
+        <FlatList
+          data={cars}
+          renderItem={renderCarItem}
+          keyExtractor={item => item.id}
+        />
+      </View>
     </View>
   );
 };
@@ -63,12 +67,28 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    padding: 20,
   },
+  Rectangle: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    borderBottomRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    backgroundColor: Colors.primary,
+    width: '100%',
+    height: '10%',
+    zIndex: -1,
+  },
+
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 18,
+    textAlign: 'center',
+    marginTop: 15,
+    marginBottom: 30,
+  },
+  inputContainer: {
+    padding: 20,
   },
   carItem: {
     flexDirection: 'row',

@@ -12,6 +12,7 @@ import {firebaseDB, authentication} from '../../firebase/firebase-config';
 import {addDoc, collection} from 'firebase/firestore/lite';
 import {Overlay} from '@rneui/base';
 import FormSuccess from '../shared/formSuccess';
+import Colors from '../const/color';
 
 const RegisterCarDetails = ({navigation}) => {
   const [uid] = useState(authentication.currentUser.uid);
@@ -46,42 +47,45 @@ const RegisterCarDetails = ({navigation}) => {
 
   return (
     <View style={styles.container}>
+      <View style={styles.Rectangle} />
       <Text style={styles.title}>Register your car details</Text>
-      <Text style={styles.label}>Car Brand</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Enter Car Brand"
-        value={carBrand}
-        onChangeText={setCarBrand}
-      />
-      <Text style={styles.label}>Car Model</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Enter Car Model"
-        value={carModel}
-        onChangeText={setCarModel}
-      />
-      <Text style={styles.label}>Car Plate Number</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Enter Car Plate Number"
-        value={carPlate}
-        onChangeText={setCarPlate}
-      />
-      <Text style={styles.label}>Car Manufacture Year</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Enter Car Manufacture Year"
-        value={carYear}
-        keyboardType="numeric"
-        onChangeText={setCarYear}
-      />
-      <TouchableOpacity
-        style={styles.button}
-        title="Register"
-        onPress={handleRegister}>
-        <Text style={styles.buttonText}>Register Car</Text>
-      </TouchableOpacity>
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Car Brand</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Enter Car Brand"
+          value={carBrand}
+          onChangeText={setCarBrand}
+        />
+        <Text style={styles.label}>Car Model</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Enter Car Model"
+          value={carModel}
+          onChangeText={setCarModel}
+        />
+        <Text style={styles.label}>Car Plate Number</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Enter Car Plate Number"
+          value={carPlate}
+          onChangeText={setCarPlate}
+        />
+        <Text style={styles.label}>Car Manufacture Year</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Enter Car Manufacture Year"
+          value={carYear}
+          keyboardType="numeric"
+          onChangeText={setCarYear}
+        />
+        <TouchableOpacity
+          style={styles.button}
+          title="Register"
+          onPress={handleRegister}>
+          <Text style={styles.buttonText}>Register Car</Text>
+        </TouchableOpacity>
+      </View>
       <Overlay
         isVisible={isVisible}
         overlayStyle={{
@@ -104,13 +108,29 @@ const RegisterCarDetails = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  Rectangle: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    borderBottomRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    backgroundColor: Colors.primary,
+    width: '100%',
+    height: '10%',
+    zIndex: -1,
+  },
+  inputContainer: {
     padding: 20,
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
-    margin: 20,
+    textAlign: 'center',
+    marginTop: 15,
+    marginBottom: 30,
   },
+  
   label: {
     fontWeight: 'bold',
     fontSize: 16,

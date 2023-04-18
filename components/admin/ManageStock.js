@@ -35,11 +35,11 @@ const ManageStockScreen = ({navigation}) => {
           navigation.navigate('UpdateStock', {
             id: item.id,
             name: item.name,
-            quantity: item.quantity,
+            price: item.price,
           })
         }>
         <Text style={styles.stockItemName}>{item.name}</Text>
-        <Text style={styles.stockItemQuantity}>{item.quantity}</Text>
+        <Text style={styles.stockItemQuantity}>{item.price}</Text>
       </TouchableOpacity>
     );
   };
@@ -53,7 +53,7 @@ const ManageStockScreen = ({navigation}) => {
         ListHeaderComponent={
           <View style={styles.header}>
             <Text style={styles.headerText}>Stock Name</Text>
-            <Text style={styles.headerText}>Quantity</Text>
+            <Text style={styles.headerText}>Price</Text>
           </View>
         }
       />

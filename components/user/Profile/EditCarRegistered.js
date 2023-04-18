@@ -12,6 +12,7 @@ import {firebaseDB, authentication} from '../../../firebase/firebase-config';
 import {updateDoc, doc, deleteDoc, collection} from 'firebase/firestore/lite';
 import {Overlay} from '@rneui/base';
 import FormSuccess from '../../shared/formSuccess';
+import Colors from '../../const/color';
 
 const EditCarRegistered = ({route, navigation}) => {
   const [brand, setBrand] = useState(route.params.brand);
@@ -76,30 +77,33 @@ const EditCarRegistered = ({route, navigation}) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Brand: </Text>
-      <TextInput style={styles.input} value={brand} onChangeText={setBrand} />
-      <Text style={styles.label}>Model: </Text>
-      <TextInput style={styles.input} value={model} onChangeText={setModel} />
-      <Text style={styles.label}>Car Plate: </Text>
-      <TextInput
-        style={styles.input}
-        value={carPlate}
-        onChangeText={setcarPlate}
-      />
-      <Text style={styles.label}>Year: </Text>
-      <TextInput
-        style={styles.input}
-        value={year.toString()}
-        onChangeText={value => setYear(parseInt(value))}
-        keyboardType="numeric"
-      />
-      <TouchableOpacity style={styles.updateButton} onPress={handleUpdateCar}>
-        <Text style={styles.updateButtonText}>Update Car Information</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.deleteButton} onPress={handleDeleteCar}>
-        <Text style={styles.deleteButtonText}>Delete Car Information</Text>
-      </TouchableOpacity>
-
+      <View style={styles.Rectangle} />
+      <Text style={styles.title}>Edit Your Car Detail Here </Text>
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Brand: </Text>
+        <TextInput style={styles.input} value={brand} onChangeText={setBrand} />
+        <Text style={styles.label}>Model: </Text>
+        <TextInput style={styles.input} value={model} onChangeText={setModel} />
+        <Text style={styles.label}>Car Plate: </Text>
+        <TextInput
+          style={styles.input}
+          value={carPlate}
+          onChangeText={setcarPlate}
+        />
+        <Text style={styles.label}>Year: </Text>
+        <TextInput
+          style={styles.input}
+          value={year.toString()}
+          onChangeText={value => setYear(parseInt(value))}
+          keyboardType="numeric"
+        />
+        <TouchableOpacity style={styles.updateButton} onPress={handleUpdateCar}>
+          <Text style={styles.updateButtonText}>Update Car Information</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.deleteButton} onPress={handleDeleteCar}>
+          <Text style={styles.deleteButtonText}>Delete Car Information</Text>
+        </TouchableOpacity>
+      </View>
       <Overlay
         isVisible={isVisible}
         overlayStyle={{
@@ -122,6 +126,26 @@ const EditCarRegistered = ({route, navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  Rectangle: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    borderBottomRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    backgroundColor: Colors.primary,
+    width: '100%',
+    height: '10%',
+    zIndex: -1,
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 15,
+    marginBottom: 30,
+  },
+  inputContainer: {
     padding: 20,
   },
   label: {

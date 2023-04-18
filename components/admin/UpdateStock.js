@@ -14,7 +14,7 @@ import FormSuccess from '../shared/formSuccess';
 
 const UpdateStockScreen = ({route, navigation}) => {
   const [name, setName] = useState(route.params.name);
-  const [quantity, setQuantity] = useState(route.params.quantity);
+  const [price, setPrice] = useState(route.params.price);
   const [OverlayText, setOverlayText] = useState('');
   const [popUpErr, setpopUpErr] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -24,12 +24,13 @@ const UpdateStockScreen = ({route, navigation}) => {
       const stockRef = doc(firebaseDB, 'stock', route.params.id);
       await updateDoc(stockRef, {
         name: name,
-        quantity: quantity,
+        price: price,
       });
+      navigation.navigate('Admin');
       setOverlayText('Stock has successfully updated');
       setpopUpErr(false);
       setIsVisible(true);
-      navigation.navigate('Admin');
+      
     } catch (error) {
       setOverlayText('Error updating the stock');
       setpopUpErr(true);
@@ -56,11 +57,11 @@ const UpdateStockScreen = ({route, navigation}) => {
     <View style={styles.container}>
       <Text style={styles.label}>Stock Name:</Text>
       <TextInput style={styles.input} value={name} onChangeText={setName} />
-      <Text style={styles.label}>Quantity:</Text>
+      <Text style={styles.label}>Price:</Text>
       <TextInput
         style={styles.input}
-        value={quantity.toString()}
-        onChangeText={value => setQuantity(parseInt(value))}
+        value={price.toString()}
+        onChangeText={value => setPrice(parseInt(value))}
         keyboardType="numeric"
       />
       <TouchableOpacity style={styles.updateButton} onPress={handleUpdateStock}>

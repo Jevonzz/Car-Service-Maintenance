@@ -11,6 +11,7 @@ import {firebaseDB, authentication} from '../../../firebase/firebase-config';
 import {doc, updateDoc} from 'firebase/firestore/lite';
 import {Overlay} from '@rneui/base';
 import FormSuccess from '../../shared/formSuccess';
+import Colors from '../../const/color';
 
 const EditProfile = ({navigation, route}) => {
   const [name, setName] = useState(route.params.name);
@@ -52,34 +53,37 @@ const EditProfile = ({navigation, route}) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Edit Your Profile Here </Text>
-      <Text style={styles.title}>Name :</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Name"
-        value={name}
-        onChangeText={setName}
-      />
-      <Text style={styles.title}>Email :</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        value={email}
-        onChangeText={setEmail}
-      />
-      <Text style={styles.title}>Phone Number :</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Phone Number"
-        value={phone}
-        onChangeText={setPhone}
-        keyboardType="numeric"
-      />
-      <TouchableOpacity
-        style={styles.updateButton}
-        onPress={handleUpdateProfile}>
-        <Text style={styles.updateButtonText}>Update Profile</Text>
-      </TouchableOpacity>
+      <View style={styles.Rectangle} />
+      <Text style={styles.title}>Edit Your Profile Here </Text>
+      <View style={styles.inputContainer}>
+        <Text style={styles.label}>Name :</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Name"
+          value={name}
+          onChangeText={setName}
+        />
+        <Text style={styles.label}>Email :</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Email"
+          value={email}
+          onChangeText={setEmail}
+        />
+        <Text style={styles.label}>Phone Number :</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Phone Number"
+          value={phone}
+          onChangeText={setPhone}
+          keyboardType="numeric"
+        />
+        <TouchableOpacity
+          style={styles.updateButton}
+          onPress={handleUpdateProfile}>
+          <Text style={styles.updateButtonText}>Update Profile</Text>
+        </TouchableOpacity>
+      </View>
       <Overlay
         isVisible={isVisible}
         overlayStyle={{
@@ -102,14 +106,29 @@ const EditProfile = ({navigation, route}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  Rectangle: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    borderBottomRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    backgroundColor: Colors.primary,
+    width: '100%',
+    height: '10%',
+    zIndex: -1,
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 15,
+    marginBottom: 30,
+  },
+  inputContainer: {
     padding: 20,
   },
   label: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
-  title: {
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 5,

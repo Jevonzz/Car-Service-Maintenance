@@ -32,11 +32,12 @@ const CarAppointmentStatus = () => {
 
   const renderItem = ({item}) => (
     <View style={styles.itemContainer}>
-      <Text style={styles.itemText}>Brand: {item.brand}</Text>
-      <Text style={styles.itemText}>Model: {item.model}</Text>
-      <Text style={styles.itemText}>Plate: {item.carPlate}</Text>
-      <Text style={styles.itemText}>Date: {item.date}</Text>
-      <Text style={styles.itemText}>Time: {item.time}</Text>
+      <Text style={styles.itemText}>
+        Car: {item.brand} {item.model} ({item.carPlate})
+      </Text>
+      <Text style={styles.itemText}>
+        Date & Time: {item.date} {item.time}
+      </Text>
       <Text style={styles.itemText}>Status: {item.status}</Text>
     </View>
   );
@@ -45,16 +46,18 @@ const CarAppointmentStatus = () => {
     <View style={styles.container}>
       <View style={styles.Rectangle} />
       <Text style={styles.title}>Appointment Status</Text>
-      {appointments.length > 0 ? (
-        <FlatList
-          data={appointments}
-          renderItem={renderItem}
-          keyExtractor={item => item.id}
-          style={styles.list}
-        />
-      ) : (
-        <Text>No appointments found</Text>
-      )}
+      <View style={styles.inputContainer}>
+        {appointments.length > 0 ? (
+          <FlatList
+            data={appointments}
+            renderItem={renderItem}
+            keyExtractor={item => item.id}
+            style={styles.list}
+          />
+        ) : (
+          <Text>No appointments found</Text>
+        )}
+      </View>
     </View>
   );
 };
@@ -62,8 +65,6 @@ const CarAppointmentStatus = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   Rectangle: {
     position: 'absolute',
@@ -76,11 +77,16 @@ const styles = StyleSheet.create({
     height: '10%',
     zIndex: -1,
   },
+  inputContainer: {
+    padding: 20,
+    margin: 10,
+  },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginTop: 10,
-    marginBottom: 40,
+    textAlign: 'center',
+    marginTop: 15,
+    marginBottom: 30,
   },
   list: {
     width: '100%',
@@ -91,6 +97,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderColor: '#ccc',
     marginBottom: 10,
+    backgroundColor: '#d3d3d3',
   },
   itemText: {
     fontSize: 16,

@@ -19,6 +19,7 @@ import {
 import DateTimePicker from '@react-native-community/datetimepicker';
 import {Overlay} from '@rneui/base';
 import FormSuccess from '../shared/formSuccess';
+import Colors from '../const/color';
 
 const ScheduleCarService = ({navigation}) => {
   const [cars, setCars] = useState([]);
@@ -67,6 +68,7 @@ const ScheduleCarService = ({navigation}) => {
         date: formattedDate,
         time: formattedTime,
         status: 'Pending',
+        paymentStatus: 'Pending',
       });
       setOverlayText(
         'Successfully Booked Car Service - Waiting Crew to Accept',
@@ -144,6 +146,7 @@ const ScheduleCarService = ({navigation}) => {
 
   return (
     <View style={styles.container}>
+      <View style={styles.Rectangle} />
       <Text style={styles.title}>Schedule Car Service</Text>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Car:</Text>
@@ -190,7 +193,7 @@ const ScheduleCarService = ({navigation}) => {
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Time:</Text>
         <Text style={styles.alert}>
-          Business Hour Starting From 9AM to 5PM{' '}
+          Business Hour Starting From 8AM to 5PM{' '}
         </Text>
         <TouchableOpacity onPress={showTimePicker}>
           <Text style={styles.date}>{formatTime(time)}</Text>
@@ -200,6 +203,7 @@ const ScheduleCarService = ({navigation}) => {
             value={time || new Date()}
             mode="time"
             display="spinner"
+            minuteInterval={30}
             onChange={handleTimeChange}
           />
         )}
@@ -232,15 +236,27 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    padding: 20,
+  },
+  Rectangle: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    borderBottomRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    backgroundColor: Colors.primary,
+    width: '100%',
+    height: '10%',
+    zIndex: -1,
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
-    marginVertical: 20,
+    textAlign: 'center',
+    marginTop: 15,
+    marginBottom: 30,
   },
   inputContainer: {
-    marginBottom: 20,
+    padding: 20,
   },
   label: {
     fontSize: 16,
