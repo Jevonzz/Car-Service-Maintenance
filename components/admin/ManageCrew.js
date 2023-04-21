@@ -7,6 +7,7 @@ import {
   ScrollView,
   StyleSheet,
 } from 'react-native';
+import Colors from '../const/color';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {firebaseDB, authentication} from '../../firebase/firebase-config';
@@ -41,26 +42,29 @@ const ManageCrew = ({navigation}) => {
   return (
     <>
       <ScrollView style={styles.container}>
-        <Text style={styles.title}>Service Crew List: </Text>
-
-        {crewList.map(crew => (
-          <TouchableOpacity
-            key={crew.id}
-            onPress={() =>
-              navigation.navigate('UpdateCrew', {
-                id: crew.id,
-                name: crew.name,
-                email: crew.email,
-                phone: crew.phone,
-                address: crew.address,
-              })
-            }>
-            <View style={styles.crewContainer}>
-              <Text style={styles.crewName}>{crew.name}</Text>
-            </View>
-          </TouchableOpacity>
-        ))}
+        <Text style={styles.title}>Service Crew List </Text>
+        <View style={styles.Rectangle} />
+        <View style={styles.CContainer}>
+          {crewList.map(crew => (
+            <TouchableOpacity
+              key={crew.id}
+              onPress={() =>
+                navigation.navigate('UpdateCrew', {
+                  id: crew.id,
+                  name: crew.name,
+                  email: crew.email,
+                  phone: crew.phone,
+                  address: crew.address,
+                })
+              }>
+              <View style={styles.crewContainer}>
+                <Text style={styles.crewName}>{crew.name}</Text>
+              </View>
+            </TouchableOpacity>
+          ))}
+        </View>
       </ScrollView>
+
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={styles.addButton}
@@ -78,9 +82,24 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
-    margin: 20,
+    margin: 10,
+    textAlign: 'center',
+  },
+  Rectangle: {
+    position: 'absolute',
+    top: -0,
+    left: 0,
+    borderBottomRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    backgroundColor: Colors.primary,
+    width: '100%',
+    height: 50,
+    zIndex: -1,
+  },
+  CContainer: {
+    padding: 20,
   },
   formContainer: {
     flexDirection: 'row',

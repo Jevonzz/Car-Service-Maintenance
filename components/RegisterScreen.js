@@ -66,7 +66,7 @@ const RegisterScreen = ({navigation, onPress}) => {
   // Function to validate user input
   const formValidation = () => {
     setLoader(true);
-    var regName = /^[a-zA-Z]+$/;
+    var regName = /^[a-z ,.'-]+$/i;
     if (!isValidObjField(userInfo)) {
       setOverlayText('Please fill all fields');
       setIsVisible(true);

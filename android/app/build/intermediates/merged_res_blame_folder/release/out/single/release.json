@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_node_modules_reactnativeratings_dist_images_star.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/node_modules_reactnativeratings_dist_images_star.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_node_modules_reactnativeratings_dist_images_airbnbstarselected.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/node_modules_reactnativeratings_dist_images_airbnbstarselected.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_assets_img_error.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/assets_img_error.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_assets_img_logo.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/assets_img_logo.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.carservicemanagement.app-main-43:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_node_modules_reactnativeratings_dist_images_bell.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/node_modules_reactnativeratings_dist_images_bell.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_node_modules_reactnativeratings_dist_images_rocket.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/node_modules_reactnativeratings_dist_images_rocket.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_assets_img_check.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/assets_img_check.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_node_modules_reactnativeratings_dist_images_heart.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/node_modules_reactnativeratings_dist_images_heart.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/drawable-mdpi_node_modules_reactnativeratings_dist_images_airbnbstar.png.flat",
+        "source": "com.carservicemanagement.app-react-37:/drawable-mdpi/node_modules_reactnativeratings_dist_images_airbnbstar.png"
+    },
+    {
+        "merged": "com.carservicemanagement.app-merged_res-42:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.carservicemanagement.app-main-43:/mipmap-xhdpi/ic_launcher.png"
+    }
+]

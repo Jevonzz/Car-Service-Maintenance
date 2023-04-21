@@ -76,34 +76,36 @@ const UpdateCC = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Update Company Contact</Text>
-      {prevContact && (
-        <View>
-          <Text style={styles.label}>Current Email:</Text>
-          <Text style={styles.value}>{prevContact.email}</Text>
-          <Text style={styles.label}>Current Phone:</Text>
-          <Text style={styles.value}>{prevContact.phone}</Text>
-        </View>
-      )}
-      <View style={{marginTop: 50, marginHorizontal: 16}} />
-      <Text style={styles.label}>New Phone:</Text>
-      <TextInput
-        style={styles.input}
-        value={phone}
-        onChangeText={setPhone}
-        placeholder="Enter new contact number"
-        keyboardType="phone-pad"
-      />
-      <Text style={styles.label}>New Email:</Text>
-      <TextInput
-        style={styles.input}
-        value={email}
-        onChangeText={setEmail}
-        placeholder="Enter new email"
-      />
-      <TouchableOpacity style={styles.button} onPress={updateContact}>
-        <Text style={styles.buttonText}>Update Contact</Text>
-      </TouchableOpacity>
-
+      <View style={styles.Rectangle} />
+      <View style={styles.CContainer}>
+        {prevContact && (
+          <View>
+            <Text style={styles.label}>Current Email:</Text>
+            <Text style={styles.value}>{prevContact.email}</Text>
+            <Text style={styles.label}>Current Phone:</Text>
+            <Text style={styles.value}>{prevContact.phone}</Text>
+          </View>
+        )}
+        <View style={{marginTop: 50, marginHorizontal: 16}} />
+        <Text style={styles.label}>New Phone:</Text>
+        <TextInput
+          style={styles.input}
+          value={phone}
+          onChangeText={setPhone}
+          placeholder="Enter new contact number"
+          keyboardType="phone-pad"
+        />
+        <Text style={styles.label}>New Email:</Text>
+        <TextInput
+          style={styles.input}
+          value={email}
+          onChangeText={setEmail}
+          placeholder="Enter new email"
+        />
+        <TouchableOpacity style={styles.button} onPress={updateContact}>
+          <Text style={styles.buttonText}>Update Contact</Text>
+        </TouchableOpacity>
+      </View>
       <Overlay
         isVisible={isVisible}
         overlayStyle={{
@@ -126,12 +128,27 @@ const UpdateCC = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  Rectangle: {
+    position: 'absolute',
+    top: -0,
+    left: 0,
+    borderBottomRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    backgroundColor: Colors.primary,
+    width: '100%',
+    height: 50,
+    zIndex: -1,
+  },
+  CContainer: {
     padding: 20,
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginTop: 10,
+    marginBottom: 30,
+    textAlign: 'center',
   },
   label: {
     fontSize: 18,

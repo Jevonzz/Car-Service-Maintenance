@@ -9,6 +9,7 @@ import {
   onSnapshot,
   collection,
 } from 'firebase/firestore/lite';
+import Colors from '../const/color';
 
 const ManageStockScreen = ({navigation}) => {
   const [stocks, setStocks] = useState([]);
@@ -46,17 +47,21 @@ const ManageStockScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <FlatList
-        data={stocks}
-        renderItem={renderStockItem}
-        keyExtractor={item => item.id}
-        ListHeaderComponent={
-          <View style={styles.header}>
-            <Text style={styles.headerText}>Stock Name</Text>
-            <Text style={styles.headerText}>Price</Text>
-          </View>
-        }
-      />
+      <Text style={styles.title}>Manage Stock</Text>
+      <View style={styles.Rectangle} />
+      <View style={styles.stockContainer}>
+        <FlatList
+          data={stocks}
+          renderItem={renderStockItem}
+          keyExtractor={item => item.id}
+          ListHeaderComponent={
+            <View style={styles.header}>
+              <Text style={styles.headerText}>Stock Name</Text>
+              <Text style={styles.headerText}>Price</Text>
+            </View>
+          }
+        />
+      </View>
       <TouchableOpacity
         style={styles.addButton}
         onPress={() => navigation.navigate('AddStock')}>
@@ -69,7 +74,27 @@ const ManageStockScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  Rectangle: {
+    position: 'absolute',
+    top: -0,
+    left: 0,
+    borderBottomRightRadius: 25,
+    borderBottomLeftRadius: 25,
+    backgroundColor: Colors.primary,
+    width: '100%',
+    height: 50,
+    zIndex: -1,
+  },
+  stockContainer: {
     padding: 20,
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop: 10,
+    marginBottom: 30,
+    textAlign: 'center',
   },
   header: {
     flexDirection: 'row',

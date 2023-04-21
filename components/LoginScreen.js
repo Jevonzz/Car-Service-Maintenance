@@ -53,31 +53,29 @@ const LoginScreen = ({navigation, onPress}) => {
     return () => unsubscribe();
   }, []);
 
-  //getRole from DB
   useEffect(() => {
     const getRole = async () => {
+      if (!uid) {
+        return;
+      }
       const userQuery = query(doc(firebaseDB, 'users', uid));
       const querySnapshot = await getDoc(userQuery);
-      const userRole = querySnapshot.data().role;
+      const userRole = querySnapshot.data()?.role;
       setRole(userRole);
     };
-    if (uid) {
-      getRole();
-    }
+    getRole();
   }, [uid]);
 
   useEffect(() => {
     console.log(role);
     if (role === 'admin') {
       navigation.navigate('AdminScreen');
-    }
-    if (role === 'crew') {
+    } else if (role === 'crew') {
       navigation.navigate('CrewScreen');
-    }
-    if (role === 'user') {
+    } else if (role === 'user') {
       navigation.navigate('UserScreen');
     }
-  }, [role]);
+  }, [role, navigation]);
 
   // OnChangeText function for textfields
   const handleOnChangeText = (value, fieldName) => {
