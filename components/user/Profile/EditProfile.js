@@ -36,9 +36,6 @@ const EditProfile = ({navigation, route}) => {
       if (user.email !== email) {
         await user.updateEmail(email);
       }
-      if (user.name !== name) {
-        await user.updateProfile({displayName: name});
-      }
 
       setOverlayText('Profile has successfully updated');
       setpopUpErr(false);

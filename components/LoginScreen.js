@@ -53,30 +53,6 @@ const LoginScreen = ({navigation, onPress}) => {
     return () => unsubscribe();
   }, []);
 
-  useEffect(() => {
-    const getRole = async () => {
-      if (!uid) {
-        return;
-      }
-      const userQuery = query(doc(firebaseDB, 'users', uid));
-      const querySnapshot = await getDoc(userQuery);
-      const userRole = querySnapshot.data()?.role;
-      setRole(userRole);
-    };
-    getRole();
-  }, [uid]);
-
-  useEffect(() => {
-    console.log(role);
-    if (role === 'admin') {
-      navigation.navigate('AdminScreen');
-    } else if (role === 'crew') {
-      navigation.navigate('CrewScreen');
-    } else if (role === 'user') {
-      navigation.navigate('UserScreen');
-    }
-  }, [role, navigation]);
-
   // OnChangeText function for textfields
   const handleOnChangeText = (value, fieldName) => {
     setUserInfo({...userInfo, [fieldName]: value});
@@ -112,6 +88,30 @@ const LoginScreen = ({navigation, onPress}) => {
         });
     } else setLoader(false);
   };
+
+  useEffect(() => {
+    const getRole = async () => {
+      if (!uid) {
+        return;
+      }
+      const userQuery = query(doc(firebaseDB, 'users', uid));
+      const querySnapshot = await getDoc(userQuery);
+      const userRole = querySnapshot.data()?.role;
+      setRole(userRole);
+    };
+    getRole();
+  }, [uid]);
+
+  useEffect(() => {
+    console.log(role);
+    if (role === 'admin') {
+      navigation.navigate('AdminScreen');
+    } else if (role === 'crew') {
+      navigation.navigate('CrewScreen');
+    } else if (role === 'user') {
+      navigation.navigate('UserScreen');
+    }
+  }, [role, navigation]);
 
   return (
     <>

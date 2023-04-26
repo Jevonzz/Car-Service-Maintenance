@@ -47,17 +47,6 @@ const RegisterScreen = ({navigation, onPress}) => {
   const [popUpErr, setpopUpErr] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  // Function to store user data from Firestore
-  const query = async uid => {
-    await setDoc(doc(firebaseDB, 'users', uid), {
-      name: fullname,
-      phoneNo: phone_num,
-      email: email,
-      uid: uid,
-      role: 'user',
-    });
-  };
-
   // OnChangeText function for textfields
   const handleOnChangeText = (value, fieldName) => {
     setUserInfo({...userInfo, [fieldName]: value});
@@ -126,6 +115,17 @@ const RegisterScreen = ({navigation, onPress}) => {
           setIsVisible(true);
         });
     } else setLoader(false);
+  };
+
+  // Function to store user data from Firestore
+  const query = async uid => {
+    await setDoc(doc(firebaseDB, 'users', uid), {
+      name: fullname,
+      phoneNo: phone_num,
+      email: email,
+      uid: uid,
+      role: 'user',
+    });
   };
 
   return (

@@ -57,17 +57,6 @@ const ManageAppointment = ({navigation}) => {
     setAppointments(updatedAppointments);
   };
 
-  const EndAppointment = async id => {
-    const appointmentRef = doc(firebaseDB, 'appointments', id);
-    await updateDoc(appointmentRef, {paymentStatus: 'Paid'});
-    const updatedAppointments = appointments.map(appointment =>
-      appointment.id === id
-        ? {...appointment, paymentStatus: 'Paid'}
-        : appointment,
-    );
-    setAppointments(updatedAppointments);
-  };
-
   return (
     <>
       <ScrollView style={styles.container}>
@@ -97,15 +86,6 @@ const ManageAppointment = ({navigation}) => {
                     style={styles.declineButton}
                     onPress={() => declineAppointment(appointment.id)}>
                     <Text style={styles.buttonText}>Decline</Text>
-                  </TouchableOpacity>
-                </View>
-              )}
-              {appointment.paymentStatus === 'Waiting Payment' && (
-                <View style={styles.buttonContainer}>
-                  <TouchableOpacity
-                    style={styles.acceptButton}
-                    onPress={() => EndAppointment(appointment.id)}>
-                    <Text style={styles.buttonText}>Paid</Text>
                   </TouchableOpacity>
                 </View>
               )}
