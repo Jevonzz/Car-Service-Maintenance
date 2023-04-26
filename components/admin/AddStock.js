@@ -14,7 +14,7 @@ import FormSuccess from '../shared/formSuccess';
 
 const AddStockScreen = ({navigation}) => {
   const [name, setName] = useState('');
-  const [quantity, setQuantity] = useState('');
+  const [price, setPrice] = useState('');
   const [OverlayText, setOverlayText] = useState('');
   const [popUpErr, setpopUpErr] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -22,8 +22,8 @@ const AddStockScreen = ({navigation}) => {
   const handleAddStock = async () => {
     const stockRef = collection(firebaseDB, 'stock');
     try {
-      await addDoc(stockRef, {name, quantity: parseInt(quantity)});
-      navigation.navigate('ManageStock');
+      await addDoc(stockRef, {name, price});
+      navigation.navigate('Admin');
       setOverlayText('Stock has successfully added');
       setpopUpErr(false);
       setIsVisible(true);
@@ -46,13 +46,13 @@ const AddStockScreen = ({navigation}) => {
           value={name}
           onChangeText={setName}
         />
-        <Text style={styles.label}>Quantity</Text>
+        <Text style={styles.label}>Price</Text>
         <TextInput
           style={styles.input}
-          placeholder="Enter quantity"
+          placeholder="Enter Price"
           keyboardType="numeric"
-          value={quantity}
-          onChangeText={setQuantity}
+          value={price}
+          onChangeText={setPrice}
         />
         <TouchableOpacity style={styles.addButton} onPress={handleAddStock}>
           <Text style={styles.addButtonText}>Add Stock</Text>
