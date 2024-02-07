@@ -11,13 +11,13 @@ For user account, you may directly create your own account on sign up page.
 To access crew function, you may directly login to this existing account.
 
 - Email: crew@gmail.com
-- Password: crew88888
+- Password: crew8888
 
 ### Admin Account
 To access admin function, you may directly login to this existing account.
 
 - Email: admin@gmail.com
-- Password: admin88888
+- Password: admin8888
 
 ## Conclusion
 ### This is my final year project during my university.
