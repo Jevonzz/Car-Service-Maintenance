@@ -1,7 +1,5 @@
 # Car-Service-Maintenance
 
-### This is my final year project during my university. 
-
 You may directly download the Release apk to use this application.
 
 ## To Login Application
@@ -19,6 +17,8 @@ To access admin function, you may directly login to this existing account.
 Email: admin@gmail.com
 Password: admin88888
 
+## Conclusion
+### This is my final year project during my university.
 Contributions are welcomed :)
 
 
